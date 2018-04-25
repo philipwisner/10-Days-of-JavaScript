@@ -4,12 +4,12 @@
 //If a is 0, throw an Error with meassage = Zero Error.
 //If a is negative, throw an Error with message = Negative Error.
 
-function reverseString(s) {
-    if (typeof s === 'string') {
-        let reverse = s.split('').reverse().join('');
-        console.log(reverse);
+function isPositive(a) {
+    if (a > 0) {
+        return 'YES';
+    } else if (a === 0) {
+        return 'Zero Error';
     } else {
-        console.log('s.split is not a function')
-        console.log(s);
-    }
+        return 'Negative Error';
+    }   
 }
