@@ -14,3 +14,9 @@ function regexVar() {
      */
     return re;
 }
+
+//\b - leading word boundary (because the pattern after it matches a word character)
+//([aeiou]) - Group 1 capturing a vowel from the specified range
+//[a-z]+ - one or more letters (both upper- and lowercase since the /i modifier is used)
+//\1 - backreference to the vowel captured with the first group
+//\b - trailing word boundary
