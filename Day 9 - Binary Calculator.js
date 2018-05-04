@@ -1,5 +1,4 @@
-/* When the button5 is clicked, the 
-text of the buttons need rotate clockwise around the outside of the 5, everytime the button is clicked.
+/* Need to make all the basic calculator functions but it needs to be done in binary numbers
 */
 
 var buttonNumbers = [1, 2, 3, 6, 9, 8, 7, 4];
