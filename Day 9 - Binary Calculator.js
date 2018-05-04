@@ -49,3 +49,42 @@ function divideClicked() {
     resultDisplay.innerHTML += "/"; 
 }
 
+//Function to get index of selected operator
+function getIndex(operator) {
+    var index = (resultDisplay.innerHTML).indexOf(operator);
+    return index;
+}
+
+//Function to select strings
+function subString(i) {
+    var string = parseInt((resultDisplay.innerHTML.substring(i+2), 2));
+    return string;
+}
+
+//BtnEql switch case to determine which operators were used and which function to perform. It then displays the results converted to binary 
+function equalClicked() {
+    var answer = 0;
+    switch (operators) {
+        case '+':
+            x = getIndex("+");
+            operator = subString(x);
+            answer = result + operator;
+            break;
+        case '-':
+            x = getIndex("-");
+            operator = subString(x);
+            answer = result - operator;
+            break;
+        case '*':
+            x = getIndex("*");
+            operator = subString(x);
+            answer = result * operator;
+            break;
+            x = getIndex("/");
+            operator = subString(x);
+            answer = result / operator;
+            break;
+    }
+    resultDisplay.innerHTML = answer.toString(2);
+}
+
