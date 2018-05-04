@@ -1,19 +1,15 @@
 /* Need to make all the basic calculator functions but it needs to be done in binary numbers
 */
 
-var buttonNumbers = [1, 2, 3, 6, 9, 8, 7, 4];
-//This array represents the button texts written in clockwise order around the 5 button
+var resultDisplay = document.getElementById('res');
+var result = 0;
 
-function rotateClockwise() {    
-  buttonNumbers.unshift(buttonNumbers.pop());
-  document.getElementById('btn1').innerHTML = buttonNumbers[0];
-  document.getElementById('btn2').innerHTML = buttonNumbers[1];
-  document.getElementById('btn3').innerHTML = buttonNumbers[2];
-  document.getElementById('btn6').innerHTML = buttonNumbers[3];
-  document.getElementById('btn9').innerHTML = buttonNumbers[4];
-  document.getElementById('btn8').innerHTML = buttonNumbers[5];
-  document.getElementById('btn7').innerHTML = buttonNumbers[6];
-  document.getElementById('btn4').innerHTML = buttonNumbers[7];
+//Btn0 Click
+function zeroClicked() {
+    resultDisplay.innerHTML += "0";
 }
 
-
+//Btn1 Click 
+function oneClicked() {
+    resultDisplay.innerHTML += "1";
+}
