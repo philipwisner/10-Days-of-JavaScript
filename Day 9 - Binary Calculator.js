@@ -13,3 +13,8 @@ function zeroClicked() {
 function oneClicked() {
     resultDisplay.innerHTML += "1";
 }
+
+//BtnClr Click
+function clearDisplay() {
+    resultDisplay.innerHTML = "";
+} 
